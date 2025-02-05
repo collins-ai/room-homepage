@@ -1,0 +1,159 @@
+:root {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "League Spartan";
+    position: relative;
+    background: hsl(0, 0%, 100%);
+}
+header {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+    @media screen and (max-width: 1200px) {
+        left: 3rem;     
+    }
+}
+.menuicon, .closeicon {
+    display: none;
+}
+.menuicon {
+    @media screen and (max-width: 1200px) {
+        display: block;        
+    }
+}
+.closeicon {
+    z-index: 1;
+    position: absolute;
+}
+.toggle {
+    display: flex;
+}
+.logo {
+    @media screen and (max-width: 1200px) {
+        margin-left: 30%;
+    }
+}
+ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+    @media screen and (max-width: 1200px) {
+        display: none;
+        position: absolute;
+        top: -5rem;
+        left: -5rem;
+        background: hsl(0, 0%, 100%);
+        width: 100vw;
+        padding: 5rem 12rem;
+    }
+}
+ul a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    @media screen and (max-width: 1200px) {
+        color: hsl(0, 0%, 0%);
+        font-weight: bold;
+    }
+}
+ul a:hover {
+    border-bottom: .3rem solid;
+    padding-bottom: 1rem;
+}
+.container1, .container2 {
+    display: flex;
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;        
+    }
+}
+.container1 section {
+    padding: 10rem;
+    position: relative;
+    @media screen and (max-width: 1300px) {
+        padding: 5rem 5rem 10rem;      
+    }
+    @media screen and (max-width: 1200px) {
+        padding: 5rem 3rem 10rem;  
+    }
+}
+.container1 h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-bottom: 3rem;
+    @media screen and (max-width: 1200px) {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        margin-bottom: 2rem;
+    }
+}
+p {
+    color: hsl(0, 0%, 63%);
+    line-height: 2.3rem;
+}
+.shopnow {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.shopnow:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 63%);
+}
+.shopnow span {
+    letter-spacing: 1rem;
+    @media screen and (max-width: 1200px) {
+        font-weight: bold;
+    }
+}
+.arrows {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @media screen and (max-width: 1200px) {
+        top: -5.5rem;
+        right: 0;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+}
+.arrows img {
+    background: hsl(0, 0%, 0%);
+    padding: 2.5rem 3rem;
+    @media screen and (max-width: 1200px) {
+        padding: 1.5rem 2rem;
+    }
+}
+.arrows img:hover {
+    cursor: pointer;
+    background: hsl(0, 0%, 27%);
+}
+.container2 section {
+    padding: 5rem;
+    @media screen and (max-width: 1200px) {
+        padding: 5rem 3rem;  
+    }
+}
+.container2 h2 {
+    letter-spacing: .5rem;
+    margin-bottom: 1rem;
+    @media screen and (max-width: 1200px) {
+        font-size: 2rem;
+        line-height: 2rem;
+        letter-spacing: .3rem;
+        margin-bottom: 1.5rem;
+    }
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
